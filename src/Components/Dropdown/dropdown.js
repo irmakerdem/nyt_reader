@@ -4,6 +4,7 @@ import './dropdown.scss';
 const Dropdown = () => {
   return (
     <>
+      <h1>Dropdown</h1>
     </>
   )
 }
