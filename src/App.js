@@ -1,9 +1,11 @@
 import './App.scss';
+import Nav from './Components/Nav/nav';
 
-function App() {
+const App = () => {
   return (
-    <>
-    </>
+    <main className='app'>
+      <Nav />
+    </main>
   );
 }
 
