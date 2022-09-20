@@ -1,9 +1,9 @@
 import './App.scss';
 import React, { useState, useEffect } from 'react';
-import Nav from './Components/Nav/nav';
-import Article from './Components/Article/article';
-import Articles from './Components/Articles/articles';
-import Dropdown from './Components/Dropdown/dropdown';
+import Nav from './Components/Nav/Nav';
+import Article from './Components/Article/Article';
+import Articles from './Components/Articles/Articles';
+import Dropdown from './Components/Dropdown/Dropdown';
 import { getArticles } from './apiCalls';
 import { Route, Switch } from 'react-router-dom';
 
