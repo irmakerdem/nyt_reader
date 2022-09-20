@@ -27,8 +27,8 @@ const App = () => {
       <Nav />
       <Switch>
         <Route exact path='/' render={() => stories.length ? (<Articles stories={stories} />) : (<h2>Loading...</h2>)} />
-        <Route path='/details/:id' render={() => stories.length ? (<Article stories={stories} />) : (<h2>Loading...</h2>)} />
-        <Route path='*' render={() => <h2>Something went wrong 🤡</h2>} />
+        {/* <Route path='/details/:id' render={() => stories.length ? (<Article stories={stories} />) : (<h2>Loading...</h2>)} />
+        <Route path='*' render={() => <h2>Something went wrong 🤡</h2>} /> */}
       </Switch>
     </main>
   );
