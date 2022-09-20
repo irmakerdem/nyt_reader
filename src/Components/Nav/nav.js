@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
     <>
-    <Link to='/'>
-      <h1 className='header'>NYT Reader</h1>
-    </Link>
+      <Link to='/'>
+        <h1 className='header'>NYT TOP STORIES</h1>
+      </Link>
     </>
   )
 }
