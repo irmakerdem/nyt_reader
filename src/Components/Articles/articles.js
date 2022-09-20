@@ -1,11 +1,14 @@
 import React from 'react';
 import './Articles.scss';
+import { Link } from 'react-router-dom';
 
 const Articles = ({stories}) => {
   const myArticles = stories.map(story => {
     return (
       <section key={story.created_date}>
-        <h2>{story.title}</h2>
+        <Link to={story.title}>
+          <h2>{story.title}</h2>
+        </Link>
         <img className='main-image' src={story.multimedia[0].url} alt={story.multimedia[0].caption}></img>
       </section>
     )
