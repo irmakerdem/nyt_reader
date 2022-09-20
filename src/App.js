@@ -35,8 +35,7 @@ const App = () => {
       <Nav />
       <Switch>
         <Route exact path='/' render={() => stories.length ? (<Articles stories={stories} />) : (<h2>Loading...</h2>)} />
-        
-        <Route path="/:title" render={({ match }) => {
+        <Route path='/:title' render={({ match }) => {
 				  const articleToRender = stories.find(story => {
             return story.title === match.params.title
           })
@@ -45,8 +44,6 @@ const App = () => {
 					)
 				}}
 			  />
-        
-        {/* <Route path='/details/:id' render={() => stories.length ? (<Article stories={stories} />) : (<h2>Loading...</h2>)} /> */}
         <Route path='*' render={() => <h2>Something went wrong 🤡</h2>} />
       </Switch>
     </main>
