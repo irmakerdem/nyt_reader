@@ -62,7 +62,7 @@ const App = () => {
 			</form> 
       <Switch>
         <Route exact path='/' render={() => stories.length ? (<Articles stories={stories} />) : (<h2>Loading...</h2>) } />
-        <Route path='/:date' render={({ match }) => {
+        <Route path='Article/:date' render={({ match }) => {
 				  const articleToRender = stories.find(story => {
             if (story.created_date === match.params.date) {
               return story
@@ -73,7 +73,7 @@ const App = () => {
 					)
 				}}
 			  />
-        {/* <Route path='*' render={() => <h2>Something went wrong 🤡</h2>} /> */}
+        <Route path='*' render={() => <h2>Something went wrong 🤡</h2>} />
       </Switch>
     </main>
   );
