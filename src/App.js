@@ -22,6 +22,7 @@ const App = () => {
     getArticles(event.target.value)
     .then(data => {
       setStories(data.results)
+      // console.log(stories)
     })
   }
 
@@ -60,10 +61,12 @@ const App = () => {
 				</select>
 			</form> 
       <Switch>
-        <Route exact path='/' render={() => stories.length ? (<Articles stories={stories} />) : (<h2>Loading...</h2>)} />
-        <Route path='/:title' render={({ match }) => {
+        <Route exact path='/' render={() => stories.length ? (<Articles stories={stories} />) : (<h2>Loading...</h2>) } />
+        <Route path='/:date' render={({ match }) => {
 				  const articleToRender = stories.find(story => {
-            return story.title === match.params.title
+            if (story.created_date === match.params.date) {
+              return story
+            }
           })
 					return (
             <Article news={articleToRender}/>
