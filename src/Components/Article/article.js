@@ -2,7 +2,7 @@ import React from 'react';
 import './Article.scss';
 
 const Article = ({news}) => {
-  // console.log(news)
+  console.log("news", news)
   return (
     <>
       <h2>{news.title}</h2>

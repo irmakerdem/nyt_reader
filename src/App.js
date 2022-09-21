@@ -19,13 +19,15 @@ const App = () => {
   }, [])
 
   const handleChange = event => {
+    setStories([])
     getArticles(event.target.value)
     .then(data => {
+      console.log(data)
       setStories(data.results)
       // console.log(stories)
     })
   }
-
+  
   return (
     <main className='app'>
       <Nav />
@@ -62,9 +64,9 @@ const App = () => {
 			</form> 
       <Switch>
         <Route exact path='/' render={() => stories.length ? (<Articles stories={stories} />) : (<h2>Loading...</h2>) } />
-        <Route path='Article/:date' render={({ match }) => {
+        <Route path='/Article/:title' render={({ match }) => {
 				  const articleToRender = stories.find(story => {
-            if (story.created_date === match.params.date) {
+            if (story.title === match.params.title) {
               return story
             }
           })
