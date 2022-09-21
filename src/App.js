@@ -22,9 +22,7 @@ const App = () => {
     setStories([])
     getArticles(event.target.value)
     .then(data => {
-      console.log(data)
       setStories(data.results)
-      // console.log(stories)
     })
   }
   

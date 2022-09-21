@@ -10,13 +10,13 @@ const Articles = ({stories}) => {
         <Link to={`/Article/${story.title}`}>
           <h2>{story.title}</h2>
         </Link>
-        {!story.multimedia ? <></>: <img className='main-image' src={story.multimedia[0].url} alt={story.multimedia[0].caption}></img>}
+        {!story.multimedia ? <>No image to display</> : <img className='main-image' src={story.multimedia[0].url} alt={story.multimedia[0].caption}></img>}
       </section>
     )
   })
   return (
     <>
-      {!myArticles ? <h2>There are no top stories for this topic.</h2> : <h2>{myArticles}</h2>}
+      <h2>{myArticles}</h2>
     </>
   )
 }
