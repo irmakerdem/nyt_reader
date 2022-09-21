@@ -6,6 +6,7 @@ const Articles = ({stories}) => {
   const myArticles = stories.map(story => {
     return (
       <section key={story.created_date}>
+        {/* <Link to={`/Article/${story.title}`}> */}
         <Link to={story.title}>
           <h2>{story.title}</h2>
         </Link>

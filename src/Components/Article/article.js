@@ -8,7 +8,7 @@ const Article = ({news}) => {
       <img className='detail-image' src={news.multimedia[0].url} alt={news.multimedia[0].caption}></img>
       <p>Copyright: {news.multimedia[0].copyright}</p>
       <p>{news.abstract}</p>
-      <p>Article: {news.url}</p>
+      <a href={news.url}>Click here for article</a>
       <p>{news.byline}</p>
     </>
   )

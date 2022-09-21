@@ -2,6 +2,14 @@ import React from 'react';
 import './Dropdown.scss';
 
 const Dropdown = () => {
+
+  // const [topic, setTopic] = useState('home');
+
+  const handleChange = event => {
+    console.log(event)
+    // setTopic(event.target.value)
+  }
+
   return (
     <>
       <form>
