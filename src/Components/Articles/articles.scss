@@ -2,3 +2,12 @@
   height: 14rem;
   width: 20rem;
 }
+
+.big-articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.title {
+  font: 1rem;
+}

@@ -6,18 +6,18 @@ const Articles = ({stories}) => {
   // console.log(stories)
   const myArticles = stories.map(story => {
     return (
-      <section key={story.title}>
-        <Link to={`/Article/${story.title}`}>
-          <h2>{story.title}</h2>
-        </Link>
-        {!story.multimedia ? <>No image to display</> : <img className='main-image' src={story.multimedia[0].url} alt={story.multimedia[0].caption}></img>}
-      </section>
+        <div key={story.title} className='all-articles'>
+          <Link to={`/Article/${story.title}`}>
+            <p className='title'>{story.title}</p>
+          </Link>
+          {!story.multimedia ? <>No image to display</> : <img className='main-image' src={story.multimedia[0].url} alt={story.multimedia[0].caption}></img>}
+        </div>
     )
   })
   return (
-    <>
-      <h2>{myArticles}</h2>
-    </>
+    <div className='big-articles-container'>
+      {myArticles}
+    </div>
   )
 }
 
