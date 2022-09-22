@@ -73,7 +73,7 @@ const App = () => {
 					)
 				}}
 			  />
-        <Route path='*' render={() => <h2>Something went wrong 🤡</h2>} />
+        <Route path='*' render={() => <h2 className='error'>Something went wrong 🤡</h2>} />
       </Switch>
     </main>
   );
