@@ -1,4 +1,5 @@
 # NYT Reader
+![home view](https://user-images.githubusercontent.com/90080658/191868217-1e557512-ffb1-4812-b65d-04bd8ac0ee62.png)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -38,11 +39,11 @@ Project can be viewed [here]().
 5. Enter `control + c` to stop the server at any time.
 
 ### Features
-![Breaking Bad gif](https://media.giphy.com/media/tFRq2uoB0glJ4XpTPd/giphy-downsized-large.gif)
-
 - User can view top stories of the 'home' topic on page load
 - User can use dropdown to choose topic of interest
+![dropdown](https://user-images.githubusercontent.com/90080658/191868077-cecadf1e-770a-493e-b1e4-13df6ad70681.png)
 - User can click article title to view a detailed page of the article including an external link to NYT
+![article detail](https://user-images.githubusercontent.com/90080658/191868147-6670ec96-ac21-41ce-aedf-8fffa1b08704.png)
 
 ### Future Features
 - URL changes based on selected topic
