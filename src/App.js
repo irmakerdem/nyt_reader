@@ -30,7 +30,7 @@ const App = () => {
     <main className='app'>
       <Nav />
       <form className='dropdown'>
-        <select onChange={(event) => handleChange(event)}>
+        <select  className='options' onChange={(event) => handleChange(event)}>
 					<option value='choose'>Choose a Topic:</option>
           <option value='arts'>Arts</option>
 					<option value='automobiles'>Automobiles</option>
