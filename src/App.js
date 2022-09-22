@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import Nav from './Components/Nav/Nav';
 import Article from './Components/Article/Article';
 import Articles from './Components/Articles/Articles';
-// import Dropdown from './Components/Dropdown/Dropdown';
 import { getArticles } from './apiCalls';
 import { Route, Switch } from 'react-router-dom';
 
@@ -30,7 +29,7 @@ const App = () => {
     <main className='app'>
       <Nav />
       <form className='dropdown'>
-        <select  className='options' onChange={(event) => handleChange(event)}>
+        <select className='options' onChange={(event) => handleChange(event)}>
 					<option value='choose'>Choose a Topic:</option>
           <option value='arts'>Arts</option>
 					<option value='automobiles'>Automobiles</option>
