@@ -3,7 +3,6 @@ import './Articles.scss';
 import { Link } from 'react-router-dom';
 
 const Articles = ({stories}) => {
-  // console.log(stories)
   const myArticles = stories.map(story => {
     return (
         <div key={story.title} className='all-articles'>

@@ -2,7 +2,6 @@ import React from 'react';
 import './Article.scss';
 
 const Article = ({news}) => {
-  // console.log("news", news)
   return (
     <section className='article-section'>
       <h2>{news.title}</h2>
