@@ -3,7 +3,6 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Deployment](#deployment)
 - [Technologies](#technologies)
 - [Set Up](#set-up)
 - [Features](#features)
@@ -17,9 +16,6 @@
 NYT Reader is a news reader app of the top stories from the New York Times (NYT) 📰. It updates daily based on how frequently the API is updated so you can get REAL top stories! 🎩
 
 This app fetches data from [The NYT Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview).
-
-### Deployment
-Project can be viewed [here]().
 
 ### Technologies
 - JavaScript
@@ -51,6 +47,7 @@ Project can be viewed [here]().
 - Page refresh functionality on detail view
 - Sorting functionality to filter from most recent to oldest articles
 - Enhanced styling for desktop users
+- Deployment
 
 ### Reflection
 - The filtering functionality using either the `title` property or `created_date` were considered.
