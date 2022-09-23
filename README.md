@@ -49,6 +49,7 @@ This app fetches data from [The NYT Top Stories API](https://developer.nytimes.c
 - Page refresh functionality on detail view
 - Sorting functionality to filter from most recent to oldest articles
 - Enhanced styling for desktop users
+- Add 'go home' button from wireframe
 - Deployment
 
 ### Reflection
