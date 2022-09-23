@@ -35,6 +35,8 @@ This app fetches data from [The NYT Top Stories API](https://developer.nytimes.c
 5. Enter `control + c` to stop the server at any time.
 
 ### Features
+- User sees a loading message during fetch call
+![loading](https://user-images.githubusercontent.com/90080658/192016354-aed4ba2b-bb6b-4999-bfaa-968af50e6e5a.png)
 - User can view top stories of the 'home' topic on page load
 - User can use dropdown to choose topic of interest
 ![dropdown](https://user-images.githubusercontent.com/90080658/191868077-cecadf1e-770a-493e-b1e4-13df6ad70681.png)
