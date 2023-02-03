@@ -1,8 +1,8 @@
 # NYT Reader
+![home view](https://user-images.githubusercontent.com/90080658/191868217-1e557512-ffb1-4812-b65d-04bd8ac0ee62.png)
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Deployment](#deployment)
 - [Technologies](#technologies)
 - [Set Up](#set-up)
 - [Features](#features)
@@ -16,9 +16,6 @@
 NYT Reader is a news reader app of the top stories from the New York Times (NYT) 📰. It updates daily based on how frequently the API is updated so you can get REAL top stories! 🎩
 
 This app fetches data from [The NYT Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview).
-
-### Deployment
-Project can be viewed [here]().
 
 ### Technologies
 - JavaScript
@@ -38,11 +35,13 @@ Project can be viewed [here]().
 5. Enter `control + c` to stop the server at any time.
 
 ### Features
-![Breaking Bad gif](https://media.giphy.com/media/tFRq2uoB0glJ4XpTPd/giphy-downsized-large.gif)
-
+- User sees a loading message during fetch call
+![loading](https://user-images.githubusercontent.com/90080658/192016354-aed4ba2b-bb6b-4999-bfaa-968af50e6e5a.png)
 - User can view top stories of the 'home' topic on page load
 - User can use dropdown to choose topic of interest
+![dropdown](https://user-images.githubusercontent.com/90080658/191868077-cecadf1e-770a-493e-b1e4-13df6ad70681.png)
 - User can click article title to view a detailed page of the article including an external link to NYT
+![article detail](https://user-images.githubusercontent.com/90080658/191868147-6670ec96-ac21-41ce-aedf-8fffa1b08704.png)
 
 ### Future Features
 - URL changes based on selected topic
@@ -50,6 +49,8 @@ Project can be viewed [here]().
 - Page refresh functionality on detail view
 - Sorting functionality to filter from most recent to oldest articles
 - Enhanced styling for desktop users
+- Add 'go home' button from wireframe
+- Deployment
 
 ### Reflection
 - The filtering functionality using either the `title` property or `created_date` were considered.
