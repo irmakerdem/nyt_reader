@@ -4,6 +4,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Technologies](#technologies)
+- [Deployment](#deployment)
 - [Set Up](#set-up)
 - [Features](#features)
 - [Future Features](#future-features)
@@ -26,6 +27,10 @@ This app fetches data from [The NYT Top Stories API](https://developer.nytimes.c
 - API fetch
 - Figma
 - GitHub Projects
+- Vercel
+
+### Deployment
+View app [here](https://nyt-reader-nine.vercel.app)!
 
 ### Set Up
 1. Clone this [repository](https://github.com/irmakerdem/nyt_reader).
